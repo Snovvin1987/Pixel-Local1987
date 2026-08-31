@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Local - Páginas Web Profesionales</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+        }
+        h1 { color: #0051ba; margin-bottom: 5px; font-size: 28px; }
+        h2 { color: #111827; font-size: 22px; margin-top: 10px; }
+        p { color: #4b5563; font-size: 15px; line-height: 1.5; }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card.featured {
+            border: 2px solid #0051ba;
+            transform: scale(1.02);
+        }
+        .card h3 { color: #0051ba; margin-top: 0; font-size: 18px; }
+        .price { font-size: 18px; font-weight: bold; color: #111827; margin: 12px 0; }
+        .card ul { padding-left: 18px; font-size: 13.5px; color: #4b5563; }
+        .card li { margin-bottom: 6px; }
+        
+        .btn-card {
+            background-color: #0051ba;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .btn-card:hover { background-color: #003d8a; }
+
+        .btn-primary {
+            background-color: #0051ba;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .btn-primary:hover { background-color: #003d8a; }
+
+        .details-section {
+            max-width: 800px;
+            margin: 50px auto 20px auto;
+            text-align: left;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .details-section h2 {
+            color: #0051ba;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .details-section h2:first-of-type { margin-top: 0; }
+        
+        footer {
+            margin-top: 40px;
+            color: #6b7280;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PIXEL LOCAL</h1>
+        <h2>¡Haz que tu negocio despegue en internet!</h2>
+        <p>Elige el plan ideal para tu negocio local. Precios accesibles y listos para atraer clientes.</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div>
+                <h3>📌 Landing Page</h3>
+                <div class="price">$1,500 - $2,000 MXN</div>
+                <ul>
+                    <li>Ideal para empezar.</li>
+                    <li>Una sola página continua.</li>
+                    <li>Botón de WhatsApp directo.</li>
+                    <li>Mapa de Google Maps y horarios.</li>
+                </ul>
+            </div>
+            <a class="btn-card" href="#landing-info">Ver descripción completa ↓</a>
+        </div>
+
+        <div class="card featured">
+            <div>
+                <h3>🌐 Sitio Web Empresarial</h3>
+                <div class="price">$3,000 - $4,500 MXN</div>
+                <ul>
+                    <li>El más completo.</li>
+                    <li>Varias secciones (Inicio, Servicios, Galería).</li>
+                    <li>Menú de navegación.</li>
+                    <li>Redes sociales y WhatsApp flotante.</li>
+                </ul>
+            </div>
+            <a class="btn-card" href="#empresarial-info">Ver descripción completa ↓</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>🛍️ Catálogo WhatsApp</h3>
+                <div class="price">$5,000 - $7,000 MXN</div>
+                <ul>
+                    <li>Para negocios con varios productos.</li>
+                    <li>Fotos, descripciones y precios.</li>
+                    <li>Carrito de pedidos directo a WhatsApp.</li>
+                </ul>
+            </div>
+            <a class="btn-card" href="#catalogo-info">Ver descripción completa ↓</a>
+        </div>
+    </div>
+
+    <div class="details-section">
+        <h2 id="landing-info">📌 ¿Qué es una Landing Page?</h2>
+        <p>Una <strong>Landing Page</strong> (o página de aterrizaje) es una página web sencilla pero sumamente efectiva que se compone de una sola sección larga hacia abajo. Está diseñada específicamente para negocios que van empezando y necesitan tener presencia rápida en internet sin gastar de más.</p>
+        <p><strong>Ideal para:</strong> Estéticas, talleres mecánicos, plomeros, electricistas, consultorios o profesionales independientes que quieren que sus clientes los encuentren en Google y les escriban de inmediato por WhatsApp con un solo toque.</p>
+
+        <h2 id="empresarial-info">🌐 ¿Qué es un Sitio Web Empresarial?</h2>
+        <p>El <strong>Sitio Web Empresarial</strong> es una página profesional de múltiples secciones (como Inicio, Quiénes Somos, Servicios, Galería de Trabajos y Contacto) conectadas mediante un menú superior. Da una imagen sumamente formal, seria y establecida ante tus clientes.</p>
+        <p><strong>Ideal para:</strong> Negocios consolidados, agencias, constructoras, escuelas o marcas que ofrecen varios servicios diferentes y quieren mostrar fotos de sus trabajos anteriores, testimonios de clientes satisfechos y su ubicación exacta con mapa interactivo.</p>
+
+        <h2 id="catalogo-info">🛍️ ¿Qué es un Catálogo de WhatsApp?</h2>
+        <p>El <strong>Catálogo de WhatsApp</strong> es una plataforma interactiva diseñada para comercios que venden productos físicos. Permite a tus clientes navegar por diferentes categorías, ver fotografías claras, descripciones detalladas, precios y armar un pedido completo que se envía directamente a tu WhatsApp con los artículos seleccionados.</p>
+        <p><strong>Ideal para:</strong> Tienditas, pastelerías, boutiques de ropa, mueblerías, verdulerías o negocios de comida que buscan automatizar sus ventas por chat y evitar responder las mismas preguntas de precios todo el día.</p>
+    </div>
+
+    <div>
+        <a class="btn-primary" href="https://wa.me/522222521419?text=Hola,%20me%20interesa%20cotizar%20una%20página%20web" target="_blank">📲 ¡Contáctanos por WhatsApp (222 252 1419)!</a>
+    </div>
+
+    <footer>
+        <p>Pixel Local © 2026 — Soluciones digitales para negocios locales.</p>
+    </footer>
+
+</body>
+</html>
+Complementar este código con algunas animaciones
